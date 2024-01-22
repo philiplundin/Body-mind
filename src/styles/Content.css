@@ -11,11 +11,13 @@
 }
 
 .content-heading {
+    font-size: 32px;
     color: black;
     margin: 16px;
 }
 
 .content-text {
+    font-size: 16px;
     color: black;
     width: 300px;
 }
@@ -24,4 +26,39 @@
     width: 250px;
     border-radius: 50%;
     margin: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        margin: 36px;
+    }
+    .content-heading {
+        font-size: 24px;
+    }
+    .content-text {
+        width: 200px;
+        font-size: 14px;
+    }
+    .profile-image {
+        width: 150px;
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 601px) {
+    .content {
+        flex-direction: row;
+    }
+    .content-heading {
+        font-size: 28px;
+    }
+    .content-text {
+        width: 250px;
+        font-size: 16px;
+    }
+    .profile-image {
+        width: 180px;
+        margin: 40px;
+    }
 }
