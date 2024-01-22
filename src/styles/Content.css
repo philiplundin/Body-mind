@@ -1,0 +1,27 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 100px;
+}
+
+.content-text-box {
+    display: flex;
+}
+
+.content-heading {
+    color: black;
+    margin: 16px;
+}
+
+.content-text {
+    color: black;
+    width: 300px;
+}
+
+.profile-image {
+    width: 250px;
+    border-radius: 50%;
+    margin: 40px;
+}
