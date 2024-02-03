@@ -39,9 +39,10 @@
     }
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 601px) {
+@media only screen and (max-width: 1025px) and (min-width: 601px) {
     .hero {
         height: 90vh;
+        background-image: url(../images/beautiful-lake_pad.jpg);
     }
     .hero-heading {
         font-size: 36px;
