@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mange/static/css/main.3e95b12a.css",
-    "main.js": "/mange/static/js/main.76e0c68a.js",
+    "main.css": "/mange/static/css/main.63bb783a.css",
+    "main.js": "/mange/static/js/main.f6d4f9b3.js",
     "static/js/787.9eba1db5.chunk.js": "/mange/static/js/787.9eba1db5.chunk.js",
     "static/media/mandala-yinyang.png": "/mange/static/media/mandala-yinyang.aeb8cefdbaa4ef5d7cfe.png",
     "static/media/beautiful-lake.jpg": "/mange/static/media/beautiful-lake.e7915589ae16c037a8a2.jpg",
@@ -9,12 +9,12 @@
     "static/media/beautiful-lake_mobil.jpg": "/mange/static/media/beautiful-lake_mobil.c9eeb8598a66ac9f80a8.jpg",
     "static/media/mangemange.jpg": "/mange/static/media/mangemange.2ad19fb3020d84a098a0.jpg",
     "index.html": "/mange/index.html",
-    "main.3e95b12a.css.map": "/mange/static/css/main.3e95b12a.css.map",
-    "main.76e0c68a.js.map": "/mange/static/js/main.76e0c68a.js.map",
+    "main.63bb783a.css.map": "/mange/static/css/main.63bb783a.css.map",
+    "main.f6d4f9b3.js.map": "/mange/static/js/main.f6d4f9b3.js.map",
     "787.9eba1db5.chunk.js.map": "/mange/static/js/787.9eba1db5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e95b12a.css",
-    "static/js/main.76e0c68a.js"
+    "static/css/main.63bb783a.css",
+    "static/js/main.f6d4f9b3.js"
   ]
 }
