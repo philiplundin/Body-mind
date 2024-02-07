@@ -3,6 +3,7 @@ import Logo from './components/Logo.js';
 import Hero from './components/Hero.js';
 import Content from './components/Content.js';
 import Nav from './components/Nav.js';
+import Contact from './components/Contact.js';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Nav />
       <Hero />
       <Content /> 
+      <Contact />
     </div>
   );
 }
