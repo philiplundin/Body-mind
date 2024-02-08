@@ -2,34 +2,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #16426D;
+    padding: 48px 0 48px 0;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    padding-bottom: 120px;
     width: 500px;
 }
 
-.contact-h1 {
+.contact-heading {
     text-align: left;
+    color: white;
     font-size: 24px;
     margin: 0;
 }
 
 .contact-divider {
-    border: 1px inset rgba(204, 204, 204, 0.5);
-    width: 100%;
+    border: 1px inset white;
+    width: 99.5%;
     margin: 4px auto;
 }
 
-.contact-group {
+.contact-section {
     display: flex;
     gap: 32px;
 }
 
 .contact-label {
     font-size: 18px;
+    color: white;
     text-align: left;
     margin: 20px 0 4px;
 }
@@ -37,22 +40,20 @@
 .contact-input {
     height: 24px;
     width: 224px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
     padding: 4px;
     font-size: 14px;
     font-family: 'Raleway', serif;
+    border: 1px solid transparent;
     font-weight: 600;
     margin-top: 4px;
 }
 
 .contact-textarea {
     height: 150px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
     padding: 6px;
     font-size: 14px;
     font-family: 'Raleway', serif;
+    border: 1px solid transparent;
     font-weight: 600;
 }
 
@@ -60,25 +61,23 @@
     width: 200px;
     height: 32px;
     font-size: 14px;
-    background-color: #034cdf;
-    color: white;
+    background-color: white;
     border: 1px solid transparent;
+    color: black;
     font-family: 'Raleway', serif;
-    border-radius: 4px;
+    font-weight: 600;
     margin-top: 24px;
     cursor: pointer;
 }
 
-.contact-button:hover {
-    background-color: #013397;
-}
-
 .feedback-form {
-    height: 507px;
+    height: 483px;
+    background-color: #16426D;
 }
 
 .feedback-text {
     font-weight: 600;
+    color: white;
 }
 
 .check {
@@ -102,15 +101,14 @@
 @media only screen and (max-width: 600px) {
     .contact-form {
         width: 330px;
-        padding-bottom: 80px;
     }
 
     .contact-h1 {
         font-size: 18px;
     }
 
-    .contact-group {
-        gap: 20px;
+    .contact-section {
+        gap: 16px;
     }
 
     .contact-label {
@@ -118,17 +116,16 @@
     }
 
     .contact-input {
-        width: 145px;
+        width: 146px;
     }
 }
 
 @media only screen and (max-width: 335px) {
     .contact-form {
         width: 260px;
-        padding-bottom: 80px;
     }
 
     .contact-input {
-        width: 110px;
+        width: 111px;
     }
 }

@@ -12,12 +12,12 @@ function Contact() {
     }
 
     return (
-        <div className='contact'>
+        <div className='contact' id="contact">
             <form className="contact-form" onSubmit={handleSubmit}>
-                <h1 className='contact-h1'>Kontaktförfrågan</h1>
+                <h1 className='contact-heading'>Kontaktförfrågan</h1>
                 <div className='contact-divider' />
 
-                <div className="contact-group">
+                <div className="contact-section">
                     <label className="contact-label">
                         Namn
                         <input className="contact-input" id="name" type="text" name="name" />
