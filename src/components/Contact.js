@@ -1,30 +1,58 @@
 import '../styles/Contact.css';
+import { useForm, ValidationError } from '@formspree/react';
 
 function Contact() {
+    const [state, handleSubmit] = useForm("moqgerbb");
+    if (state.succeeded) {
+        return <div className='feedback-form'>
+            <div className="check"></div>
+            <p className='feedback-text'>Din kontaktförfrågan har skickats!</p>
+        </div>
+
+    }
+
     return (
         <div className='contact'>
-            <form className="contact-form" action="https://formsubmit.co/bodymindtest123@outlook.com" method="POST">
+            <form className="contact-form" onSubmit={handleSubmit}>
                 <h1 className='contact-h1'>Kontaktförfrågan</h1>
                 <div className='contact-divider' />
 
                 <div className="contact-group">
                     <label className="contact-label">
                         Namn
-                        <input className="contact-input" type="text" name="name" required />
+                        <input className="contact-input" id="name" type="text" name="name" />
+                        <ValidationError
+                            className='validation-error'
+                            prefix="Name"
+                            field="name"
+                            errors={state.errors}
+                        />
                     </label>
 
                     <label className="contact-label">
                         Email
-                        <input className="contact-input" type="email" name="email" required />
+                        <input className="contact-input" id="email" type="email" name="email" />
+                        <ValidationError
+                            className='validation-error'
+                            prefix="Email"
+                            field="email"
+                            errors={state.errors}
+                        />
                     </label>
                 </div>
 
                 <label className="contact-label">
                     Meddelande
                 </label>
-                <textarea className="contact-textarea" name="message" required />
-                
-                <button className="contact-button" type="submit">Skicka kontaktförfrågan</button>
+                <textarea className="contact-textarea" id="message" name="message" />
+                <ValidationError
+                    className='validation-error'
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                />
+
+                <button className="contact-button" type="submit" disabled={state.submitting}>Skicka kontaktförfrågan</button>
             </form>
         </div>
     );

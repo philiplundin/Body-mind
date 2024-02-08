@@ -1,12 +1,12 @@
 .contact {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    justify-items: center;
     padding-bottom: 120px;
     width: 500px;
 }
@@ -71,6 +71,32 @@
 
 .contact-button:hover {
     background-color: #013397;
+}
+
+.feedback-form {
+    height: 507px;
+}
+
+.feedback-text {
+    font-weight: 600;
+}
+
+.check {
+    display: inline-block;
+    margin-top: 96px;
+    transform: rotate(45deg);
+    height: 24px;
+    width: 12px;
+    border-bottom: var(--borderWidth) solid var(--borderColor);
+    border-right: var(--borderWidth) solid var(--borderColor);
+    --borderWidth: 7px;
+    --borderColor: #78b13f;
+}
+
+.validation-error {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 600px) {
