@@ -52,7 +52,7 @@ function Contact() {
                     errors={state.errors}
                 />
 
-                <button className="contact-button" type="submit" disabled={state.submitting}>Skicka kontaktförfrågan</button>
+                <button className="contact-button" type="submit" disabled={state.submitting}>Skicka</button>
             </form>
         </div>
     );
