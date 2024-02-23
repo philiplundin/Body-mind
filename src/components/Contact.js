@@ -15,7 +15,7 @@ function Contact() {
         <div className='contact' id="contact">
             <form className="contact-form" onSubmit={handleSubmit}>
                 <h1 className='contact-heading'>Kontaktförfrågan</h1>
-                <div className='contact-divider' />
+                <hr className='contact-separator'/>
 
                 <div className="contact-section">
                     <label className="contact-label">

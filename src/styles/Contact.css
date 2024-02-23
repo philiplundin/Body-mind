@@ -19,10 +19,12 @@
     margin: 0;
 }
 
-.contact-divider {
-    border: 1px inset white;
-    width: 99.5%;
+.contact-separator {
+    background-color: white;
+    height: 1px;
+    width: 100%;
     margin: 4px auto;
+    border: none;
 }
 
 .contact-section {
