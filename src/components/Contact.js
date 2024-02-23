@@ -5,7 +5,7 @@ function Contact() {
     const [state, handleSubmit] = useForm("moqgerbb");
     if (state.succeeded) {
         return <div className='feedback-form'>
-            <div className="check"></div>
+            <div className="check" />
             <p className='feedback-text'>Din kontaktförfrågan har skickats!</p>
         </div>
 
@@ -15,12 +15,22 @@ function Contact() {
         <div className='contact' id="contact">
             <form className="contact-form" onSubmit={handleSubmit}>
                 <h1 className='contact-heading'>Kontaktförfrågan</h1>
-                <hr className='contact-separator'/>
+                <hr className='contact-separator' />
+
+                {state.errors ? (
+                    <p className='validation-error'>{state?.errors.formErrors[0].message}</p>
+                ) : <p className='validation' />}
 
                 <div className="contact-section">
                     <label className="contact-label">
                         Namn
-                        <input className="contact-input" id="name" type="text" name="name" />
+                        <input
+                            className="contact-input"
+                            id="name"
+                            type="text"
+                            name="name"
+                            required
+                        />
                         <ValidationError
                             className='validation-error'
                             prefix="Name"
@@ -31,7 +41,13 @@ function Contact() {
 
                     <label className="contact-label">
                         Email
-                        <input className="contact-input" id="email" type="email" name="email" />
+                        <input
+                            className="contact-input"
+                            id="email"
+                            type="email"
+                            name="email"
+                            required
+                        />
                         <ValidationError
                             className='validation-error'
                             prefix="Email"
@@ -44,7 +60,13 @@ function Contact() {
                 <label className="contact-label">
                     Meddelande
                 </label>
-                <textarea className="contact-textarea" id="message" name="message" />
+                <textarea
+                    className="contact-textarea"
+                    id="message"
+                    name="message"
+                    required
+                />
+
                 <ValidationError
                     className='validation-error'
                     prefix="Message"
@@ -52,7 +74,13 @@ function Contact() {
                     errors={state.errors}
                 />
 
-                <button className="contact-button" type="submit" disabled={state.submitting}>Skicka</button>
+                <button
+                    className="contact-button"
+                    type="submit"
+                    disabled={state.submitting}
+                >
+                    Skicka
+                </button>
             </form>
         </div>
     );

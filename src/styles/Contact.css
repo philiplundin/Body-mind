@@ -36,7 +36,7 @@
     font-size: 18px;
     color: white;
     text-align: left;
-    margin: 20px 0 4px;
+    margin: 4px 0 4px;
 }
 
 .contact-input {
@@ -94,10 +94,16 @@
     --borderColor: #78b13f;
 }
 
+.validation {
+ margin: 4px 0 0;
+ height: 19px;
+}
+
 .validation-error {
-    margin-top: 4px;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    color: red;
+    margin: 4px 0 0;
+    text-align: left;
 }
 
 @media only screen and (max-width: 600px) {
