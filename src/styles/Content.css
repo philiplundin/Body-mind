@@ -13,13 +13,14 @@
 .content-heading {
     font-size: 32px;
     color: black;
-    margin: 16px;
+    text-align: left;
 }
 
 .content-text {
     font-size: 16px;
     color: black;
     width: 300px;
+    text-align: left;
 }
 
 .profile-image {
