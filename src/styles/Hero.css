@@ -23,9 +23,19 @@
     font-size: 18px;
 }
 
+.arrow {
+    position: absolute;
+    left: calc(50% - 15.5px);
+    bottom: 50px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    padding: 14px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
 @media only screen and (max-width: 600px) {
     .hero {
-        height: 85vh;
         background-image: url(../images/beautiful-lake_mobil.jpg);
     }
 
@@ -41,12 +51,13 @@
 
 @media only screen and (max-width: 1025px) and (min-width: 601px) {
     .hero {
-        height: 90vh;
         background-image: url(../images/beautiful-lake_pad.jpg);
     }
+
     .hero-heading {
         font-size: 36px;
     }
+
     .hero-text {
         font-size: 18px;
         max-width: 500px;
