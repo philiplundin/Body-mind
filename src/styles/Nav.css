@@ -1,6 +1,6 @@
 .nav {
     position: absolute;
-    top: 10%;
+    top: 11%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -26,13 +26,10 @@ a {
 
 @media only screen and (max-width: 600px) {
     .nav {
-        top: 12%;
-    }
-    .nav-flex {
-        width: 215px;
+        top: 13%;
     }
     li {
-        margin: 10px;
+        margin: 16px;
     }
     a {
         font-size: 14px;
