@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/body-mind/static/css/main.eadf9104.css",
+    "main.css": "/body-mind/static/css/main.a84dd23b.css",
     "main.js": "/body-mind/static/js/main.048899a9.js",
     "static/js/787.dca89aab.chunk.js": "/body-mind/static/js/787.dca89aab.chunk.js",
     "static/media/mandala-yinyang.png": "/body-mind/static/media/mandala-yinyang.aeb8cefdbaa4ef5d7cfe.png",
@@ -9,12 +9,12 @@
     "static/media/beautiful-lake_mobil.jpg": "/body-mind/static/media/beautiful-lake_mobil.c9eeb8598a66ac9f80a8.jpg",
     "static/media/mangemange.jpg": "/body-mind/static/media/mangemange.2ad19fb3020d84a098a0.jpg",
     "index.html": "/body-mind/index.html",
-    "main.eadf9104.css.map": "/body-mind/static/css/main.eadf9104.css.map",
+    "main.a84dd23b.css.map": "/body-mind/static/css/main.a84dd23b.css.map",
     "main.048899a9.js.map": "/body-mind/static/js/main.048899a9.js.map",
     "787.dca89aab.chunk.js.map": "/body-mind/static/js/787.dca89aab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eadf9104.css",
+    "static/css/main.a84dd23b.css",
     "static/js/main.048899a9.js"
   ]
 }
