@@ -12,7 +12,7 @@ function Contact() {
     }
 
     return (
-        <div className='contact' id="contact">
+        <section className='contact' id="contact">
             <form className="contact-form" onSubmit={handleSubmit}>
                 <h1 className='contact-heading'>Kontaktförfrågan</h1>
                 <hr className='contact-separator' />
@@ -82,7 +82,7 @@ function Contact() {
                     Skicka
                 </button>
             </form>
-        </div>
+        </section>
     );
 }
 

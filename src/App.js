@@ -1,9 +1,11 @@
 import './App.css';
 import Logo from './components/Logo.js';
 import Hero from './components/Hero.js';
-import Content from './components/Content.js';
 import Nav from './components/Nav.js';
+import About from './components/About.js';
+import Mission from './components/Mission.js';
 import Contact from './components/Contact.js';
+import USPs from './components/USPs.js';
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
       <Logo />
       <Nav />
       <Hero />
-      <Content /> 
+      <USPs />
+      <About /> 
+      <Mission /> 
       <Contact />
     </div>
   );

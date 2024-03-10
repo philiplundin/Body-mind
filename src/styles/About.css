@@ -1,22 +1,24 @@
-.content {
+.about {
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: white;
-    margin: 77px 0 77px 0;
+    margin: auto;
+    max-width: 600px;
+    margin-bottom: 16px;
+    text-align: left;
 }
 
-.content-text-box {
+.about-text-box {
     display: flex;
 }
 
-.content-heading {
+.about-heading {
     font-size: 32px;
     color: black;
     text-align: left;
 }
 
-.content-text {
+.about-text {
     font-size: 16px;
     color: black;
     width: 300px;
@@ -24,23 +26,27 @@
 }
 
 .profile-image {
-    width: 250px;
+    width: 180px;
     border-radius: 50%;
     margin: 40px;
 }
 
 @media only screen and (max-width: 600px) {
-    .content {
+    .about {
         flex-direction: column;
-        margin: 36px;
+        margin-bottom: 32px;
     }
-    .content-heading {
+
+    .about-heading {
         font-size: 24px;
+        margin-top: 8px;
     }
-    .content-text {
+
+    .about-text {
         width: 250px;
         font-size: 14px;
     }
+
     .profile-image {
         width: 150px;
         margin: 20px;
@@ -48,18 +54,20 @@
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 601px) {
-    .content {
+    .about {
         flex-direction: row;
     }
-    .content-heading {
+
+    .about-heading {
         font-size: 28px;
     }
-    .content-text {
-        width: 250px;
+
+    .about-text {
         font-size: 16px;
     }
+
     .profile-image {
         width: 180px;
-        margin: 40px;
+        margin: 32px;
     }
 }

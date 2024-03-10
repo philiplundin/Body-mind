@@ -37,6 +37,7 @@
 @media only screen and (max-width: 600px) {
     .hero {
         background-image: url(../images/beautiful-lake_mobil.jpg);
+        height: 95vh;
     }
 
     .hero-heading {
